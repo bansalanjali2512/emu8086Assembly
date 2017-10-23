@@ -1,6 +1,5 @@
 Data segment
     sum dw 0
-    index dw 0
     array dw 1,2,3,4,5
 Data ends
 
@@ -9,6 +8,7 @@ code segment
     start:
         MOV AX,Data
         MOV DS,AX
+
         MOV SI,0
         MOV CX,4
         XOR AX,AX 
