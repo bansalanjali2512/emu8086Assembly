@@ -19,7 +19,7 @@ CODE SEGMENT
 
     NEXT:
         MOV AX, WORD PTR UNPACKED[SI]
-        SHL AL,4
+        SHL AL,4                                ; shift left al register to 4 bit
         SHR AX,4
         MOV PACKED[DI],AL
         INC SI
